@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,85 @@
   to {
     transform: rotate(360deg);
   }
+} */
+/*---------------------------------------------------------------------------------------------------------*/
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+  background-color: gray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navbar-list{
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar-list-item-Link{
+  font-size: 16px;
+  color: black;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.navbar-list-item{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.navbar-list-item:last-child{
+  margin-right: auto;
+}
+.movie-entry{
+  width: 400px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* .gridContainer{
+  background-color: red;
+} */
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 335px);
+  grid-auto-rows: 600px;
+  column-gap: 10px;
+  row-gap: 80px;
+  width: 1025px;
+  margin: 50px auto;
+}
+.gridCell{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.gridCell-image{
+  height: 500px;
+  width: 335px;
+  object-fit: cover;
+}
+.gridCell-movieName{
+  margin: 10px 0px;
+}
+.gridCell-button{
+  font-size: 16px;
+  background-color: gray;
+  box-sizing: border-box;
+  border: none;
+  height: 40px;
 }
